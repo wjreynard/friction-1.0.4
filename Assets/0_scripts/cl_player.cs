@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+//using System.Diagnostics;
 
 public class cl_player : MonoBehaviour {
     [Header("Player")]
@@ -39,6 +40,7 @@ public class cl_player : MonoBehaviour {
     private AudioSource sound_jump;
     private RandomSound sound_collectibles;
     private bool alreadyLanded = false;
+    public AudioManager audioManager;
     
     [Header("Ramps")]
     public float downLandBoost = 0.5f;
@@ -73,7 +75,10 @@ public class cl_player : MonoBehaviour {
     private float rightmove;
     private float upmove;
 
-    void Start() {
+    void Start()
+    {
+        audioManager = FindObjectsOfType<AudioManager>()[0];
+
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -289,6 +294,12 @@ public class cl_player : MonoBehaviour {
             float collectibles = PlayerPrefs.GetFloat("Collectibles");
             collectibles += collectibleCount;
             PlayerPrefs.SetFloat("Collectibles", collectibles);
+        }
+
+
+        if (other.CompareTag("MusicFadeTrigger"))
+        {
+            audioManager.FadeSound("Music");
         }
     }
 
