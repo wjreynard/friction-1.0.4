@@ -19,12 +19,12 @@ public class cl_player : MonoBehaviour {
     
     [Header("Movement")]
     public float moveSpeed = 3.2f;
-    public float runAcceleration = 150.0f; // Originally 20.0f;
-    public float runDeacceleration = 20.0f; // Originally 5.0f;
+    public float runAcceleration = 20.0f; // Originally 20.0f;
+    public float runDeacceleration = 5.0f; // Originally 5.0f;
     //public float airAcceleration		= 2.0f;
     //public float airDeacceleration	= 2.0f;
     //public float airControl			= 0.3f;
-    public float sideStrafeAcceleration = 9000.0f;
+    public float sideStrafeAcceleration = 1000.0f;
     public float sideStrafeSpeed = 0.2f;
     public float jumpSpeed = 6.0f;
     public float moveScale = 1.0f;
