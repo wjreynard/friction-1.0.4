@@ -736,6 +736,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 5917097501122054641, guid: 01557ca4d1e410942a3c21cabd57f1dc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a98432faa843ae34fbce7f6b98717f1b,
+        type: 3}
     - target: {fileID: 5917097501122054642, guid: 01557ca4d1e410942a3c21cabd57f1dc,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -804,6 +810,21 @@ PrefabInstance:
     - target: {fileID: 5917097501355781902, guid: 01557ca4d1e410942a3c21cabd57f1dc,
         type: 3}
       propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917097501538925813, guid: 01557ca4d1e410942a3c21cabd57f1dc,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917097501538925813, guid: 01557ca4d1e410942a3c21cabd57f1dc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5917097501538925813, guid: 01557ca4d1e410942a3c21cabd57f1dc,
+        type: 3}
+      propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5917097501716722276, guid: 01557ca4d1e410942a3c21cabd57f1dc,
