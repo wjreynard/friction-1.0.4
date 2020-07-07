@@ -24,7 +24,7 @@ public class cl_player : MonoBehaviour {
     //public float airAcceleration		= 2.0f;
     //public float airDeacceleration	= 2.0f;
     //public float airControl			= 0.3f;
-    public float sideStrafeAcceleration = 9000f;
+    public float sideStrafeAcceleration = 9000.0f;
     public float sideStrafeSpeed = 0.2f;
     public float jumpSpeed = 6.0f;
     public float moveScale = 1.0f;
@@ -88,7 +88,7 @@ public class cl_player : MonoBehaviour {
         // Initialise player's collectible trail
         collectibleCount = PlayerPrefs.GetFloat("Collectibles");
         ParticleSystem.MainModule trails = collectibleTrail.main;
-        trails.startSizeMultiplier = collectibleCount * 0.005f;
+        trails.startSizeMultiplier = collectibleCount * 0.002f;
 
         // Set sensitivity
         sensitivity = PlayerPrefs.GetFloat("playerSens");

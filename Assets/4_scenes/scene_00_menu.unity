@@ -121,6 +121,20 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &124985334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1908551607057938, guid: 7fcc4a17385f000449484c9febe7bfe8,
+    type: 3}
+  m_PrefabInstance: {fileID: 778176907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &124985335
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124985334}
+  m_Enabled: 1
 --- !u!1001 &426650186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,6 +214,36 @@ PrefabInstance:
     - target: {fileID: 4586024919485588, guid: 7fcc4a17385f000449484c9febe7bfe8, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393802209743594, guid: 7fcc4a17385f000449484c9febe7bfe8,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393802209743594, guid: 7fcc4a17385f000449484c9febe7bfe8,
+        type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Chimes
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393802209743594, guid: 7fcc4a17385f000449484c9febe7bfe8,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0440c51231d13794dbf5ae0a486d6129, type: 3}
+    - target: {fileID: 114393802209743594, guid: 7fcc4a17385f000449484c9febe7bfe8,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393802209743594, guid: 7fcc4a17385f000449484c9febe7bfe8,
+        type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393802209743594, guid: 7fcc4a17385f000449484c9febe7bfe8,
+        type: 3}
+      propertyPath: sounds.Array.data[1].loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114306081336493782, guid: 7fcc4a17385f000449484c9febe7bfe8, type: 3}
@@ -330,20 +374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac1a022fa26a2d44a7d41044cbcf390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1513331291 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1908551607057938, guid: 7fcc4a17385f000449484c9febe7bfe8,
-    type: 3}
-  m_PrefabInstance: {fileID: 778176907}
-  m_PrefabAsset: {fileID: 0}
---- !u!81 &1513331292
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513331291}
-  m_Enabled: 1
 --- !u!1 &1566570325
 GameObject:
   m_ObjectHideFlags: 0

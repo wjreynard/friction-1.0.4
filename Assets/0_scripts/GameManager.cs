@@ -1,6 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//using System.Collections;
+//using System.Collections.Generic;
+//using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     
@@ -9,7 +11,12 @@ public class GameManager : MonoBehaviour {
         PlayerPrefs.SetFloat("Collectibles", 0.1f);
         PlayerPrefs.SetFloat("playerSens", 1.0f);
 
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        int index = SceneManager.GetActiveScene().buildIndex;
+        if (index == 5 || index == 0)
+        {
+            Debug.Log("main menu");
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }
