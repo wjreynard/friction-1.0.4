@@ -5497,7 +5497,7 @@ MonoBehaviour:
   moveSpeed: 3.2
   runAcceleration: 20
   runDeacceleration: 15
-  sideStrafeAcceleration: 500
+  sideStrafeAcceleration: 9000
   sideStrafeSpeed: 0.2
   jumpSpeed: 6
   moveScale: 2
@@ -5505,6 +5505,7 @@ MonoBehaviour:
   collectibleTrail: {fileID: 198970901139843504}
   obj_collectible_boid: {fileID: 1807313551553900, guid: fefe92d0b6449f64f8eedd9e80660a20,
     type: 3}
+  audioManager: {fileID: 0}
   downLandBoost: 0.5
   downJumpBoost: 0.4
   upJumpBoost: 0.15
