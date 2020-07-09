@@ -18,10 +18,10 @@ public class GameManager : MonoBehaviour {
         PlayerPrefs.SetFloat("Collectibles", 0.1f);
         PlayerPrefs.SetFloat("playerSens", 1.0f);
 
-        audioManager.ResetSoundVolume("Music");
+        audioManager.FadeInSound("Music");
 
         int index = SceneManager.GetActiveScene().buildIndex;
-        if (index == 5 || index == 0)
+        if (index == 2 || index == 0)
         {
             //Debug.Log("main menu");
             Cursor.visible = true;

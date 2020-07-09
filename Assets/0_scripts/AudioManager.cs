@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour {
         s.source.Play();
     }
 
-    public void FadeSound(string name)
+    public void FadeOutSound(string name)
     {
         Debug.Log("AudioManager::FadeSound(string)");
 
@@ -67,7 +67,24 @@ public class AudioManager : MonoBehaviour {
             return;
         }
 
-        StartCoroutine(AudioManager.StartFade(s.source, 10.0f, 0.0f));
+        StartCoroutine(AudioManager.StartFade(s.source, 12.0f, 0.0f));
+    }
+
+    public void FadeInSound(string name)
+    {
+        Debug.Log("AudioManager::FadeSound(string)");
+
+        // Find sound in sounds array where sound.name == name.
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+
+        // If no sound found of that name, then return to avoid error.
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+
+        StartCoroutine(AudioManager.StartFade(s.source, 12.0f, 1.0f));
     }
 
     public void ResetSoundVolume(string name)

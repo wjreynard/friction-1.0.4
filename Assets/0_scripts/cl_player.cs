@@ -282,7 +282,7 @@ public class cl_player : MonoBehaviour {
 
             // Add to collectible trail size
             ParticleSystem.MainModule trails = collectibleTrail.main;
-            trails.startSizeMultiplier = collectibleCount * 0.005f;
+            trails.startSizeMultiplier = collectibleCount * 0.002f;
 
             // Destroy collectible
             Destroy(other.gameObject);
@@ -299,7 +299,7 @@ public class cl_player : MonoBehaviour {
 
         if (other.CompareTag("MusicFadeTrigger"))
         {
-            audioManager.FadeSound("Music");
+            audioManager.FadeOutSound("Music");
         }
     }
 

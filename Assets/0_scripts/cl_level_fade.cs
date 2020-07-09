@@ -13,7 +13,7 @@ public class cl_level_fade : MonoBehaviour {
     public void OnFadeComplete() {
         // If on last level, go to menu scene
         // This could be improved by automatically detecting last level in build rather than manually setting it
-        if (SceneManager.GetActiveScene().buildIndex == 5)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             SceneManager.LoadScene(0);
         }

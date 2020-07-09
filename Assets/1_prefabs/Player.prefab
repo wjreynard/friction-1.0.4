@@ -5427,7 +5427,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478977473563454}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5472,7 +5472,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 1
   m_Radius: 0.45
-  m_SlopeLimit: 160
+  m_SlopeLimit: 120
   m_StepOffset: 0.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
@@ -5496,10 +5496,10 @@ MonoBehaviour:
   friction: 3
   moveSpeed: 3.2
   runAcceleration: 20
-  runDeacceleration: 15
-  sideStrafeAcceleration: 9000
+  runDeacceleration: 1
+  sideStrafeAcceleration: 4000
   sideStrafeSpeed: 0.2
-  jumpSpeed: 6
+  jumpSpeed: 5
   moveScale: 2
   collectibleCount: 0
   collectibleTrail: {fileID: 198970901139843504}
