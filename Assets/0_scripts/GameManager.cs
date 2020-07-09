@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour {
 
     public AudioManager audioManager;
+
+    void Awake()
+    {
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+    }
     
 	void Start () {
         // On game start, initialise...
@@ -18,7 +23,7 @@ public class GameManager : MonoBehaviour {
         int index = SceneManager.GetActiveScene().buildIndex;
         if (index == 5 || index == 0)
         {
-            Debug.Log("main menu");
+            //Debug.Log("main menu");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
