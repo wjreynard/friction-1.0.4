@@ -6,24 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-    public AudioManager audioManager;
+    private AudioManager audioManager;
 
     void Awake()
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
-    
-	void Start () {
-        // On game start, initialise...
-        PlayerPrefs.SetFloat("Collectibles", 0.1f);
-        PlayerPrefs.SetFloat("playerSens", 1.0f);
 
-        audioManager.FadeInSound("Music");
-
+    void Start()
+    {
         int index = SceneManager.GetActiveScene().buildIndex;
-        if (index == 2 || index == 0)
+
+        if (index == 1)
         {
-            //Debug.Log("main menu");
+            audioManager.FadeInSound("Music");
+        }
+        else if (index == 0 || index == 2)
+        {
+            PlayerPrefs.SetFloat("Collectibles", 0.1f);
+            PlayerPrefs.SetFloat("playerSens", 1.0f);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }

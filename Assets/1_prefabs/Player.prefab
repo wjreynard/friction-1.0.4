@@ -5496,7 +5496,7 @@ MonoBehaviour:
   friction: 3
   moveSpeed: 3.2
   runAcceleration: 20
-  runDeacceleration: 1
+  runDeacceleration: 10
   sideStrafeAcceleration: 4000
   sideStrafeSpeed: 0.2
   jumpSpeed: 5
