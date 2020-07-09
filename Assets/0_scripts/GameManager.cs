@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour {
         {
             audioManager.FadeInSound("Music");
         }
-        else if (index == 0 || index == 2)
+        else if (index == 0 || index == 5)
         {
             PlayerPrefs.SetFloat("Collectibles", 0.1f);
             PlayerPrefs.SetFloat("playerSens", 1.0f);

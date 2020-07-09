@@ -85,7 +85,7 @@ public class AudioManager : MonoBehaviour {
             return;
         }
 
-        StartCoroutine(AudioManager.StartFade(s.source, 12.0f, 1.0f));
+        StartCoroutine(AudioManager.StartFade(s.source, 5.0f, 1.0f));
     }
 
     public void ResetSoundVolume(string name)
