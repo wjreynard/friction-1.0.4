@@ -107,10 +107,10 @@ public class cl_player : MonoBehaviour {
             AudioSource sound_jump = GameObject.Find("PlayerAudioManager").transform.GetChild(1).GetComponent<AudioSource>();
 
             // Set sound_jump volume based on player velocity
-            Vector3 ups;
-            ups = controller.velocity;
-            float upsMag = Mathf.Floor(ups.magnitude);
-            sound_jump.volume = 0.01f + upsMag * 0.015f;
+            //Vector3 ups;
+            //ups = controller.velocity;
+            //float upsMag = Mathf.Floor(ups.magnitude);
+            //sound_jump.volume = 0.15f + upsMag * 0.001f;
 
             sound_jump.Play();
 
