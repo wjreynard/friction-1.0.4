@@ -1,5 +1,5 @@
 # Friction
-A movement game, playable [here](https://wjreynard.itch.io/friction).
+A first-person platformer, playable [here](https://wjreynard.itch.io/friction).
 
 Find scripts under /Assets/0_scripts.
 
